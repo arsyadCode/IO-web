@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Inbound Student Registration Form</h2>
+    <form action="process_registration.php" method="POST">
+        <label for="passport_number">Passport Number</label>
+        <input type="text" id="passport_number" name="passport_number" required>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Japan">Japan</option>
+        </select>
+
+        <label for="department">Department</label>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="Management">Management</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Science">Science</option>
+        </select>
+
+        <input type="submit" value="Register">
+    </form>
+
+    <form>
+        
+    </form>
+</body>
+</html>
